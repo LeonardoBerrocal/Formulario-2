@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h3>Accede a tu Área Clientes</h3>
+        <form action="web.php" method="get">
+            <p>Elige tu documento</p>
+            <p>
+                <input type="radio" name="documento" value="DNI">DNI o Tarjeta de residencia
+            </p>
+            <p>    
+                <input type="radio" name="documento" value="Pasaporte">Pasaporte
+            </p>
+            <p>Número de documento</p>
+            <input type="text" name="numero DNI" id="numero DNI">
+            <p>Fecha de nacimiento</p>
+            <input type="date" id="fecha">
+            <p>
+                <input type="checkbox" name="check">Recordar
+            </p>
+            <input type="submit" value="Entrar">
+        </form>
+        <hr>
+        <form action="web.php" method="get">
+            <p>Empieza creando tu usuario</p>
+            <input type="text" name="usuario" value="Nombre" id="usuario">
+            <p>
+                <input type="text" name="apellido 1" value="1º apellido" id="apellido 1">
+                <input type="text" name="apellido 2" value="2º apellido" id="apellido 2">
+            </p>
+            <p>
+                <select name="Tipo de documento">
+                   <option value="1">DNI</option>
+                   <option value="2">NIF</option>
+                   <option value="3">CERT.AEAT</option>
+                </select>
+                <input type="number" value="Número de documento" name="nº documento">
+            </p>
+            <p>
+                <input type="telf" value="Móvil" id="telefono">
+                <input type="email" value="Email" id="email">
+            </p>
+        </form>
+        <hr>
+        <form action="web.php" method="get">
+            <h3>¿Eres nuevo?</h3>
+            <p>Regístrate para guerdar tu información y hacer tus pedidos de forma más facil y rápida.</p>
+            <p>Email</p>
+            <input type="text" name="correo" value="Introduce tu email" id="correo">
+            <p>Teléfono</p>
+            <input type="telf" value="Tu teléfono" id="telefono">
+            <p>Contraseña</p>
+            <input type="password" name="contraseña" value="Introduce tu contraseña" id="contraseña">
+            <p>Confirma tu contraseña</p>
+            <input type="password" name="contraseña" value="Confirmar tu contraseña" id="contraseña">
+            <p>
+                <input type="checkbox" name="check">He leído y acepto Política de privicidad
+            </p>
+            <p>
+                <input type="checkbox" name="check">Sí, acepto recibir comunicar comerciales y ofertas personalizadas según mi perfil.
+            </p>
+            <input type="submit" value="Crea tu cuenta">
+        </form>
+    </section>
+</body>
+</html>
